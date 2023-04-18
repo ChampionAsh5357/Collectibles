@@ -1,0 +1,23 @@
+[versions]
+# Java
+java = "17"
+
+# Minecraft
+minecraft = "1.19.4"
+forge_main = "1.19.4-45.0.43"
+parchment_mappings = "1.19.3-2023.03.12"
+
+# Plugins
+forge_gradle = "5.1.+"
+#sponge_mixin = "0.7-SNAPSHOT"
+parchment_librarian = "1.+"
+licenser = "0.6.1"
+
+[libraries]
+forge = { module = "net.minecraftforge:forge", version.ref = "forge_main"}
+
+[plugins]
+forge_gradle = { id = "net.minecraftforge.gradle", version.ref = "forge_gradle" }
+#sponge_mixin = { id = "org.spongepowered.mixin", version.ref = "sponge_mixin" }
+parchment_librarian = { id = "org.parchmentmc.librarian.forgegradle", version.ref = "parchment_librarian" }
+licenser = { id = "org.cadixdev.licenser", version.ref = "licenser" }
